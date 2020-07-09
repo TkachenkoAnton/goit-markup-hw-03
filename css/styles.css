@@ -80,6 +80,7 @@ p {
 
 .list {
   list-style: none;
+  padding: 0;
   margin: 0;
 }
 
@@ -95,10 +96,13 @@ p {
 /* Навигация и контакты */
 .header-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 .navigation-item-list {
@@ -116,6 +120,20 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--pages-name);
+}
+
+.navigation-item-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.navigation-item-list .item + .item {
+  margin-left: 50px;
+}
+
+.contacts-list .contacts-list-item + .contacts-list-item {
+  margin-left: 30px;
 }
 
 .contacts-list-item-link {
@@ -138,6 +156,10 @@ p {
   line-height: 1.19;
 }
 
+.navigation .logo {
+  margin-right: 85px;
+}
+
 .logotop {
   color: var(--logo-top-color);
 }
@@ -149,7 +171,7 @@ p {
   /* Временный фон */
 }
 
-.hero-container {
+.hero-center {
   padding-top: 200px;
   padding-bottom: 200px;
 }
