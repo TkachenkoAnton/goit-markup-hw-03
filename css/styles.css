@@ -67,6 +67,7 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   margin: auto;
+  outline: 2px solid tomato;
 }
 
 /* Общие сбросы */
@@ -92,7 +93,23 @@ p {
 
 /* Верхняя линия */
 /* Навигация и контакты */
-.navigation-item,
+.header-container {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-item-list {
+  display: flex;
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.navigation-item-link,
 .contacts-list-item-link {
   font-weight: 500;
   font-size: 14px;
@@ -105,8 +122,8 @@ p {
   color: var(--primary-font-color);
 }
 
-.navigation-item:hover,
-.navigation-item:focus,
+.navigation-item-link:hover,
+.navigation-item-link:focus,
 .contacts-list-item-link:hover,
 .contacts-list-item-link:focus {
   color: var(--activestate);
@@ -126,10 +143,18 @@ p {
 }
 
 /* Шапка */
-.main-headline {
+.hero {
   /* Временный фон */
   background-color: plum;
   /* Временный фон */
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.main-headline {
+  width: 696px;
+  padding-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
