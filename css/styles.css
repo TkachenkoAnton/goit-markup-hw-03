@@ -147,9 +147,13 @@ p {
   /* Временный фон */
   background-color: plum;
   /* Временный фон */
+}
+
+.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .main-headline {
   width: 696px;
   padding-bottom: 30px;
