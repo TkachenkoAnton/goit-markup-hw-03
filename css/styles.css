@@ -45,6 +45,16 @@ Filters - #212121
   --filters: #212121;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-font-color);
@@ -59,11 +69,18 @@ h3,
 p {
   margin: 0;
 }
+
 .list {
   list-style: none;
+  margin: 0;
 }
+
 .link {
   text-decoration: none;
+}
+
+.photo {
+  display: block;
 }
 
 /* Верхняя линия */
@@ -261,8 +278,11 @@ p {
 /* Наши проекты */
 /* Фильтры */
 .filters-btn {
-  display: inline-block;
-  padding: 6px 22px;
+  display: block;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
   border-width: 0px;
   border-radius: 4px;
   font-weight: 500;
@@ -271,6 +291,7 @@ p {
   text-align: center;
   background-color: var(--filtersbuttonbackground);
   color: var(--filters);
+  cursor: pointer;
 }
 
 .filters-btn:hover,
