@@ -51,13 +51,21 @@ body {
   font-family: var(--primary-text-font);
   letter-spacing: 0.03em;
 }
-/* Общие стили */
+
+/* Общие сбросы */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+
 /* Верхняя линия */
 /* Навигация и контакты */
 .navigation-item,
@@ -68,15 +76,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--pages-name);
 }
+
 .contacts-list-item-link {
   color: var(--primary-font-color);
 }
+
 .navigation-item:hover,
 .navigation-item:focus,
 .contacts-list-item-link:hover,
 .contacts-list-item-link:focus {
   color: var(--activestate);
 }
+
 /* Logo */
 .logo {
   color: var(--primary-logo-color);
@@ -85,6 +96,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
+
 .logotop {
   color: var(--logo-top-color);
 }
@@ -102,9 +114,15 @@ body {
   text-transform: uppercase;
   color: var(--h1-h3-headline);
 }
+
 .main-btn {
-  display: inline-block;
-  padding: 10px 32px;
+  display: block;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  margin-right: auto;
+  margin-left: auto;
   border-width: 0px;
   border-radius: 4px;
   font-weight: 700;
@@ -114,6 +132,7 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--activestate);
   color: var(--main-bottom-color);
+  cursor: pointer;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -128,6 +147,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-headline);
 }
+
 .features-list-item .description {
   font-size: 14px;
   line-height: 1.71;
@@ -141,6 +161,7 @@ body {
   text-align: center;
   color: var(--primary-headline);
 }
+
 .whatarewedoing-list-item .title {
   /* Временный фон */
   background-color: plum;
@@ -161,6 +182,7 @@ body {
   text-align: center;
   color: var(--primary-headline);
 }
+
 .ourteam-list-item .title {
   font-weight: 500;
   font-size: 16px;
@@ -168,14 +190,17 @@ body {
   text-align: center;
   color: var(--primary-headline);
 }
+
 .ourteam-list-item .description {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
 }
+
 .socialnetworks-links {
   color: inherit;
 }
+
 .socialnetworks-links:hover,
 .socialnetworks-links:focus {
   background-color: var(--activestate);
@@ -197,9 +222,11 @@ body {
   background-color: #2f303a;
   /* Временный фон */
 }
+
 .logobottom {
   color: var(--logo-bottom-color);
 }
+
 .address-item-street,
 .address-item-contacts {
   font-style: normal;
@@ -207,9 +234,11 @@ body {
   line-height: 1.71;
   color: var(--footerheadelements);
 }
+
 .address-item-contacts {
   color: var(--footerelements);
 }
+
 .joinin {
   font-weight: 700;
   font-size: 14px;
@@ -217,10 +246,12 @@ body {
   text-transform: uppercase;
   color: var(--footerheadelements);
 }
+
 .joinin-links {
   background: var(--joinin-links-background);
   color: var(--primary-background-color);
 }
+
 .joinin-links:hover,
 .joinin-links:focus {
   background-color: var(--activestate);
@@ -241,11 +272,13 @@ body {
   background-color: var(--filtersbuttonbackground);
   color: var(--filters);
 }
+
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--primary-background-color);
   background-color: var(--activestate);
 }
+
 /* Примеры работ */
 
 .example-list-item .title {
@@ -255,15 +288,18 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-headline);
 }
+
 .example-list-item .description {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-font-color);
 }
+
 .example-list-item .about {
   font-size: 18px;
   line-height: 1.56;
 }
+
 .example-links:hover,
 .example-links:focus {
   color: var(--activestate);
