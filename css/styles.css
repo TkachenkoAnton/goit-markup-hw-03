@@ -140,6 +140,10 @@ p {
   color: var(--primary-font-color);
 }
 
+.current {
+  color: var(--activestate);
+}
+
 .navigation-item-link:hover,
 .navigation-item-link:focus,
 .contacts-list-item-link:hover,
@@ -379,6 +383,22 @@ p {
   /* Временный фон */
   background-color: #2f303a;
   /* Временный фон */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-adress {
+  margin-right: 86px;
+}
+
+.logo-adress .logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .logobottom {
@@ -398,11 +418,21 @@ p {
 }
 
 .joinin {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--footerheadelements);
+}
+
+.joinin-list {
+  display: flex;
+}
+
+.joinin-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .joinin-links {
