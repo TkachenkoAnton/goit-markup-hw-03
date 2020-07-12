@@ -284,7 +284,18 @@ p {
 }
 
 /* Наша Команда */
+
+.ourteam {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.ourteam-list {
+  display: flex;
+}
+
 .ourteam-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -292,7 +303,16 @@ p {
   color: var(--primary-headline);
 }
 
+.ourteam-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.ourteam-list-item .photo {
+  margin-bottom: 30px;
+}
+
 .ourteam-list-item .title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -301,9 +321,19 @@ p {
 }
 
 .ourteam-list-item .description {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
+}
+
+.socialnetworks {
+  display: flex;
+  justify-content: center;
+}
+
+.socialnetworks-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .socialnetworks-links {
