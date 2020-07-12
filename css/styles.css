@@ -447,7 +447,23 @@ p {
 
 /* Портфолио */
 /* Наши проекты */
+
+.ourprojects {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+
 /* Фильтры */
+.ourprojects-filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.ourprojects-filters-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filters-btn {
   display: block;
   padding-top: 6px;
@@ -473,6 +489,19 @@ p {
 
 /* Примеры работ */
 
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-list-item {
+  width: 370px;
+}
+
+.example-list-item:nth-child:not(:2n) {
+  margin-right: 30px;
+}
+
 .example-list-item .title {
   font-weight: 700;
   font-size: 18px;
@@ -490,6 +519,10 @@ p {
 .example-list-item .about {
   font-size: 18px;
   line-height: 1.56;
+}
+
+.example-links {
+  display: block;
 }
 
 .example-links:hover,
