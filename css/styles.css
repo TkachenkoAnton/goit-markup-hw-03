@@ -178,7 +178,7 @@ p {
 
 .main-headline {
   width: 696px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
@@ -215,7 +215,28 @@ p {
 }
 
 /* Особености */
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+.features-list-item {
+  width: 270px;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list-item .photo {
+  margin-bottom: 30px;
+}
+
 .features-list-item .title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
