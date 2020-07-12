@@ -250,12 +250,25 @@ p {
 }
 
 /* Чем Мы Занимаемся */
+.whatarewedoing {
+  padding-bottom: 94px;
+}
+
 .whatarewedoing-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-headline);
+}
+
+.whatarewedoing-list {
+  display: flex;
+}
+
+.whatarewedoing-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .whatarewedoing-list-item .title {
