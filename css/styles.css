@@ -128,12 +128,12 @@ p {
   padding-bottom: 32px;
 }
 
-.navigation-item-list .item + .item {
-  margin-left: 50px;
+.navigation-item-list .item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.contacts-list .contacts-list-item + .contacts-list-item {
-  margin-left: 30px;
+.contacts-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .contacts-list-item-link {
