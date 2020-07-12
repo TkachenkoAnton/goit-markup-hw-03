@@ -347,12 +347,31 @@ p {
 }
 
 /* Постоянные клиенты */
+
+.partners {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .partners-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-headline);
+}
+
+.partners-list {
+  display: flex;
+}
+
+.partners-list-item {
+  width: 170px;
+}
+
+.partners-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Подвал */
