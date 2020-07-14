@@ -498,6 +498,24 @@ p {
 
 /* Примеры работ */
 
+.example-links .photo {
+  display: block;
+}
+
+.example-links {
+  display: block;
+}
+
+.border-options {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .examples-list {
   display: flex;
   flex-wrap: wrap;
@@ -535,11 +553,10 @@ p {
   line-height: 1.56;
 }
 
-.example-links {
-  display: block;
-}
-
 .example-links:hover,
 .example-links:focus {
-  color: var(--activestate);
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--primary-background-color);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
